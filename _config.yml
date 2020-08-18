@@ -6,10 +6,10 @@
 # Site
 title: NexT
 subtitle:
-description:
-author: John Doe
+description: 每天进步一点点
+author: Surrender
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # URL
@@ -87,7 +87,7 @@ keywords: "Jekyll, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+#since: 2020
 
 # icon between year and author @Footer
 authoricon: heart
@@ -228,12 +228,12 @@ social_icons:
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
   Twitter: twitter
-  Weibo: weibo
+  Weibo: Stanley之
 
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-#avatar:
+avatar: /images/avatar.jpg
 
 
 # Table Of Contents in the Sidebar
@@ -264,8 +264,8 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
-  #display: always
+  #display: post
+  display: always
   #display: hide
   #display: remove
 
@@ -364,7 +364,8 @@ highlight_theme: normal
 mathjax:
   enable: false
   per_page: false
-  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  #cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support docs: https://hanzi.pro/
 han: false
@@ -373,7 +374,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 4c7635e234ab8e83cb7d61cdb73381aa
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -435,12 +436,16 @@ changyan:
 
 # Support for gitalk comments system.
 gitalk:
-  enable: false
-  clientID: # 54730ddf7b9420460c03
-  clientSecret: # c05684701b25ff1c19ea0c01ce4d80c125e0707d
-  repo: # colingpt.github.io
-  owner: # colingpt
-  admin: # colingpt
+  enable: true    #是否开启Gitalk评论
+  clientID: 97bbb8a73eac78c54eca                            #生成的clientID
+  clientSecret: dc9cd8823085beb374ae8a1fbba2303e5d332b0e    #生成的clientSecret
+  repo: surrender2xyz.github.io    #仓库名称
+  owner: surrender2xyz    #github用户名
+  admin: ['surrender2xyz']
+  pagerDirection: last    # 排序方式是从旧到新（first）还是从新到旧（last）
+  createIssueManually: true   #如果当前页面没有相应的 isssue ，且登录的用户属于 admin，则会自动创建 issue。如果设置为 true，则显示一个初始化页面，创建 issue 需要点击 init 按钮。
+  id: location.pathname
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 # Baidu Share
 # Available value:
@@ -586,7 +591,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -605,7 +610,7 @@ exturl: false
 #! ---------------------------------------------------------------
 
 # Motion
-use_motion: true
+use_motion: false
 
 # Fancybox
 fancybox: true

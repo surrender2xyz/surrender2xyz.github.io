@@ -1,12 +1,13 @@
 ---
-layout:     post
-title:      测试博客对Markdown语法的支持
-subtitle:   测试
-date:       2020-08-09
-author:     surrender
-categories: true
+layout: post
+title: 测试博客对Markdown语法的支持
+subtitle: 测试
+date: 2020-08-09
+author: surrender
+categories: 
+- true
 tags:
-    - 2020年
+- 2020年
 ---
 
 # Cmd Markdown 简明语法手册

@@ -4,7 +4,6 @@ title:      静脉血栓栓塞VTE
 subtitle:   测试
 date:       2020-08-09
 author:     surrender
-categories: true
 tags:
     - 医疗
     - 2020年
